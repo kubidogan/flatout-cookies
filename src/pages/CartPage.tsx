@@ -116,10 +116,10 @@ export default function CartPage() {
                       </div>
                       <div className="text-right">
                         <p className="text-sm text-gray-500">
-                          ${item.cookie.price.toFixed(2)} each
+                          £{item.cookie.price.toFixed(2)} each
                         </p>
                         <p className="text-xl font-bold text-primary-600">
-                          ${(item.cookie.price * item.quantity).toFixed(2)}
+                          £{(item.cookie.price * item.quantity).toFixed(2)}
                         </p>
                       </div>
                     </div>

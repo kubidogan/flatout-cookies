@@ -5,7 +5,7 @@ export const mockCookies: Cookie[] = [
     id: "1",
     name: "Classic Chocolate Chip",
     description:
-      "Our signature cookie with premium chocolate chips and a hint of vanilla. Soft, chewy, and absolutely irresistible.",
+      "Our signature biscuit with premium chocolate chips and a hint of vanilla. Soft, chewy, and absolutely irresistible.",
     price: 3.99,
     category: "Classic",
     image:
@@ -25,7 +25,7 @@ export const mockCookies: Cookie[] = [
     id: "2",
     name: "Double Chocolate Fudge",
     description:
-      "Rich chocolate cookie loaded with dark chocolate chunks. Perfect for chocolate lovers.",
+      "Rich chocolate biscuit loaded with dark chocolate chunks. Perfect for chocolate lovers.",
     price: 4.49,
     category: "Chocolate",
     image:
@@ -64,7 +64,7 @@ export const mockCookies: Cookie[] = [
     id: "4",
     name: "Peanut Butter Delight",
     description:
-      "Creamy peanut butter cookies with the perfect balance of sweet and salty.",
+      "Creamy peanut butter biscuits with the perfect balance of sweet and salty.",
     price: 4.29,
     category: "Specialty",
     image:
@@ -75,9 +75,9 @@ export const mockCookies: Cookie[] = [
   },
   {
     id: "5",
-    name: "Sugar Cookie Supreme",
+    name: "Sugar Biscuit Supreme",
     description:
-      "Light, buttery sugar cookies with colorful sprinkles. A timeless favorite.",
+      "Light, buttery sugar biscuits with colourful sprinkles. A timeless favourite.",
     price: 3.29,
     category: "Classic",
     image:
@@ -107,7 +107,7 @@ export const mockCookies: Cookie[] = [
   {
     id: "7",
     name: "Snickerdoodle",
-    description: "Cinnamon-sugar coated cookies with a soft, chewy center.",
+    description: "Cinnamon-sugar coated biscuits with a soft, chewy centre.",
     price: 3.79,
     category: "Classic",
     image:
@@ -125,7 +125,7 @@ export const mockCookies: Cookie[] = [
   {
     id: "8",
     name: "Red Velvet",
-    description: "Luxurious red velvet cookies with cream cheese chips.",
+    description: "Luxurious red velvet biscuits with cream cheese chips.",
     price: 4.79,
     category: "Premium",
     image:
@@ -144,7 +144,7 @@ export const mockCookies: Cookie[] = [
   {
     id: "9",
     name: "Lemon Zest",
-    description: "Refreshing lemon cookies with a tangy glaze.",
+    description: "Refreshing lemon biscuits with a tangy glaze.",
     price: 3.99,
     category: "Specialty",
     image:
@@ -162,7 +162,7 @@ export const mockCookies: Cookie[] = [
   {
     id: "10",
     name: "Chocolate Mint",
-    description: "Rich chocolate cookies with cool mint chocolate chips.",
+    description: "Rich chocolate biscuits with cool mint chocolate chips.",
     price: 4.29,
     category: "Chocolate",
     image:
@@ -180,7 +180,7 @@ export const mockCookies: Cookie[] = [
   {
     id: "11",
     name: "Salted Caramel",
-    description: "Sweet caramel cookies with a hint of sea salt.",
+    description: "Sweet caramel biscuits with a hint of sea salt.",
     price: 4.49,
     category: "Premium",
     image:
@@ -198,7 +198,7 @@ export const mockCookies: Cookie[] = [
   {
     id: "12",
     name: "Gingerbread",
-    description: "Spiced gingerbread cookies perfect for any season.",
+    description: "Spiced gingerbread biscuits perfect for any season.",
     price: 3.69,
     category: "Specialty",
     image:

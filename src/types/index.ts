@@ -21,8 +21,8 @@ export interface ShippingInfo {
   phone: string;
   address: string;
   city: string;
-  state: string;
-  zipCode: string;
+  county: string;
+  postcode: string;
   country: string;
 }
 

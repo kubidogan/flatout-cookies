@@ -38,7 +38,7 @@ function CookieCard({ cookie }: { cookie: Cookie }) {
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-bold text-gray-900">{cookie.name}</h3>
           <span className="text-primary-600 font-bold text-lg">
-            ${cookie.price.toFixed(2)}
+            £{cookie.price.toFixed(2)}
           </span>
         </div>
         <p className="text-sm text-primary-600 mb-2">{cookie.category}</p>

@@ -13,9 +13,9 @@ export default function CheckoutPage() {
     phone: "",
     address: "",
     city: "",
-    state: "",
-    zipCode: "",
-    country: "USA",
+    county: "",
+    postcode: "",
+    country: "United Kingdom",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -104,7 +104,7 @@ export default function CheckoutPage() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
-                      placeholder="(555) 123-4567"
+                      placeholder="07700 900000"
                     />
                   </div>
 
@@ -119,7 +119,7 @@ export default function CheckoutPage() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
-                      placeholder="USA"
+                      placeholder="United Kingdom"
                     />
                   </div>
                 </div>
@@ -151,37 +151,37 @@ export default function CheckoutPage() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
-                      placeholder="New York"
+                      placeholder="London"
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      State *
+                      County **
                     </label>
                     <input
                       type="text"
-                      name="state"
-                      value={formData.state}
+                      name="county"
+                      value={formData.county}
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
-                      placeholder="NY"
+                      placeholder="Greater London"
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      ZIP Code *
+                      Postcode *
                     </label>
                     <input
                       type="text"
-                      name="zipCode"
-                      value={formData.zipCode}
+                      name="postcode"
+                      value={formData.postcode}
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
-                      placeholder="10001"
+                      placeholder="SW1A 1AA"
                     />
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export default function CheckoutPage() {
                       </p>
                     </div>
                     <p className="font-semibold text-sm">
-                      ${(item.cookie.price * item.quantity).toFixed(2)}
+                      £{(item.cookie.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 ))}

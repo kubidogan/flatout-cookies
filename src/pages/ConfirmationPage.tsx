@@ -80,12 +80,12 @@ export default function ConfirmationPage() {
                         Quantity: {item.quantity}
                       </p>
                       <p className="text-primary-600 font-semibold">
-                        ${item.cookie.price.toFixed(2)} each
+                        £{item.cookie.price.toFixed(2)} each
                       </p>
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-lg">
-                        ${(item.cookie.price * item.quantity).toFixed(2)}
+                        £{(item.cookie.price * item.quantity).toFixed(2)}
                       </p>
                     </div>
                   </div>

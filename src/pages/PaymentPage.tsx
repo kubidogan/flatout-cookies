@@ -184,7 +184,7 @@ export default function PaymentPage() {
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-gray-600">Subtotal</span>
                   <span className="font-semibold">
-                    ${getCartTotal().toFixed(2)}
+                    £{getCartTotal().toFixed(2)}
                   </span>
                 </div>
                 <div className="flex justify-between items-center mb-2">
@@ -194,7 +194,7 @@ export default function PaymentPage() {
                 <div className="border-t border-gray-300 pt-2 mt-2 flex justify-between items-center">
                   <span className="text-xl font-bold">Total</span>
                   <span className="text-2xl font-bold text-primary-600">
-                    ${getCartTotal().toFixed(2)}
+                    £{getCartTotal().toFixed(2)}
                   </span>
                 </div>
               </div>
