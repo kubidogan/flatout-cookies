@@ -116,16 +116,6 @@ const LandingPage: React.FC = () => {
     }
   };
 
-  // Handle immediate navigation (Enter Shop button)
-  const handleEnterShop = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-
-    setTimeout(() => {
-      navigate("/shop");
-    }, 250);
-  };
-
   return (
     <div className="fixed inset-0 overflow-hidden bg-black">
       {/* Full-screen SVG storefront */}
