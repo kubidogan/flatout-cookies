@@ -1,10 +1,10 @@
 # FlatOut Cookies 🍪
 
-A modern, fully responsive React e-commerce marketplace for purchasing delicious cookies. Features an interactive 3D landing page, comprehensive shopping cart, and complete checkout flow.
+A modern, fully responsive React e-commerce marketplace for purchasing delicious cookies. Features an interactive animated landing page, comprehensive shopping cart, and complete checkout flow.
 
 ## Features
 
-- **Interactive 3D Landing Page**: Engage users with a Three.js animated cookie that they can rotate and click to enter the site
+- **Interactive Animated Landing Page**: Engage users with a GSAP-powered SVG storefront with opening door animation
 - **Cookie Catalog**: Browse through a variety of cookies with filtering by category and search functionality
 - **Shopping Cart**: Add, remove, and adjust quantities of items with real-time total calculation
 - **Checkout Process**: Multi-step checkout with shipping information collection
@@ -18,7 +18,7 @@ A modern, fully responsive React e-commerce marketplace for purchasing delicious
 - **React 18** with TypeScript
 - **Vite** for fast development and building
 - **React Router** for navigation
-- **React Three Fiber** & **@react-three/drei** for 3D graphics
+- **GSAP** for animations
 - **Tailwind CSS** for styling
 - **Lucide React** for icons
 - **Context API** for state management
@@ -109,7 +109,7 @@ flatoutcookies/
 
 ### 3D Landing Page
 
-- Fully interactive 3D cookie model using Three.js
+- Fully interactive SVG storefront with GSAP animations
 - Rotate, zoom, and hover effects
 - Click to enter the shop
 
@@ -192,7 +192,7 @@ This project is open source and available for educational purposes.
 
 - Images from [Unsplash](https://unsplash.com)
 - Icons from [Lucide](https://lucide.dev)
-- 3D rendering powered by [Three.js](https://threejs.org)
+- Smooth animations powered by [GSAP](https://gsap.com)
 
 ---
 

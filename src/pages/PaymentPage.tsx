@@ -83,7 +83,7 @@ export default function PaymentPage() {
         <div className="container mx-auto px-4 py-4">
           <button
             onClick={() => navigate("/checkout")}
-            className="flex items-center gap-2 text-primary-600 hover:text-primary-700"
+            className="flex items-center gap-2 text-amber-800 hover:text-amber-900"
             disabled={processing}
           >
             <ArrowLeft size={20} />
@@ -100,7 +100,7 @@ export default function PaymentPage() {
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-xl shadow-md p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <CreditCard className="text-primary-600" size={32} />
+              <CreditCard className="text-amber-800" size={32} />
               <h2 className="text-2xl font-bold">Payment Information</h2>
             </div>
 
@@ -115,7 +115,7 @@ export default function PaymentPage() {
                   value={paymentData.cardNumber}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none font-mono"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none font-mono"
                   placeholder="4242 4242 4242 4242"
                 />
               </div>
@@ -130,7 +130,7 @@ export default function PaymentPage() {
                   value={paymentData.cardName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                   placeholder="JOHN DOE"
                 />
               </div>
@@ -146,7 +146,7 @@ export default function PaymentPage() {
                     value={paymentData.expiryDate}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none font-mono"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none font-mono"
                     placeholder="MM/YY"
                   />
                 </div>
@@ -161,7 +161,7 @@ export default function PaymentPage() {
                     value={paymentData.cvv}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none font-mono"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none font-mono"
                     placeholder="123"
                   />
                 </div>
@@ -193,7 +193,7 @@ export default function PaymentPage() {
                 </div>
                 <div className="border-t border-gray-300 pt-2 mt-2 flex justify-between items-center">
                   <span className="text-xl font-bold">Total</span>
-                  <span className="text-2xl font-bold text-primary-600">
+                  <span className="text-2xl font-bold text-amber-800">
                     £{getCartTotal().toFixed(2)}
                   </span>
                 </div>

@@ -14,7 +14,7 @@ export default function CartPage() {
           <div className="container mx-auto px-4 py-4">
             <button
               onClick={() => navigate("/shop")}
-              className="flex items-center gap-2 text-primary-600 hover:text-primary-700"
+              className="flex items-center gap-2 text-amber-800 hover:text-amber-900"
             >
               <ArrowLeft size={20} />
               Back to Shop
@@ -44,12 +44,12 @@ export default function CartPage() {
           <div className="flex items-center justify-between">
             <button
               onClick={() => navigate("/shop")}
-              className="flex items-center gap-2 text-primary-600 hover:text-primary-700"
+              className="flex items-center gap-2 text-amber-800 hover:text-amber-900"
             >
               <ArrowLeft size={20} />
               Back to Shop
             </button>
-            <h1 className="text-2xl md:text-3xl font-bold text-primary-600 font-display">
+            <h1 className="text-2xl md:text-3xl font-bold text-amber-800 font-display">
               Shopping Cart
             </h1>
             <div className="w-24"></div>
@@ -78,7 +78,7 @@ export default function CartPage() {
                         <h3 className="text-xl font-bold text-gray-900">
                           {item.cookie.name}
                         </h3>
-                        <p className="text-sm text-primary-600">
+                        <p className="text-sm text-amber-800">
                           {item.cookie.category}
                         </p>
                       </div>
@@ -118,7 +118,7 @@ export default function CartPage() {
                         <p className="text-sm text-gray-500">
                           £{item.cookie.price.toFixed(2)} each
                         </p>
-                        <p className="text-xl font-bold text-primary-600">
+                        <p className="text-xl font-bold text-amber-800">
                           £{(item.cookie.price * item.quantity).toFixed(2)}
                         </p>
                       </div>
@@ -137,7 +137,7 @@ export default function CartPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-gray-600">
                   <span>Items ({getCartCount()})</span>
-                  <span>${getCartTotal().toFixed(2)}</span>
+                  <span>£{getCartTotal().toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                   <span>Shipping</span>
@@ -145,9 +145,12 @@ export default function CartPage() {
                 </div>
                 <div className="border-t pt-3 flex justify-between text-xl font-bold">
                   <span>Total</span>
-                  <span className="text-primary-600">
-                    ${getCartTotal().toFixed(2)}
+                                  <div className="flex justify-between items-center text-2xl font-bold">
+                  <span>Total:</span>
+                  <span className="text-amber-800">
+                    £{getCartTotal().toFixed(2)}
                   </span>
+                </div>
                 </div>
               </div>
 

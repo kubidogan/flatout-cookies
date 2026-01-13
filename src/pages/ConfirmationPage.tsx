@@ -49,7 +49,7 @@ export default function ConfirmationPage() {
           {/* Order Details */}
           <div className="bg-white rounded-xl shadow-md p-8 mb-8">
             <div className="flex items-center gap-3 mb-6">
-              <Package className="text-primary-600" size={28} />
+              <Package className="text-amber-800" size={28} />
               <h2 className="text-2xl font-bold">Order Details</h2>
             </div>
 
@@ -79,7 +79,7 @@ export default function ConfirmationPage() {
                       <p className="text-gray-600 text-sm">
                         Quantity: {item.quantity}
                       </p>
-                      <p className="text-primary-600 font-semibold">
+                      <p className="text-amber-800 font-semibold">
                         £{item.cookie.price.toFixed(2)} each
                       </p>
                     </div>
@@ -104,7 +104,7 @@ export default function ConfirmationPage() {
               </div>
               <div className="flex justify-between text-2xl font-bold pt-2 border-t">
                 <span>Total</span>
-                <span className="text-primary-600">
+                <span className="text-amber-800">
                   ${order.total.toFixed(2)}
                 </span>
               </div>
@@ -114,15 +114,15 @@ export default function ConfirmationPage() {
           {/* Shipping Information */}
           <div className="bg-white rounded-xl shadow-md p-8 mb-8">
             <div className="flex items-center gap-3 mb-6">
-              <Home className="text-primary-600" size={28} />
+              <Home className="text-amber-800" size={28} />
               <h2 className="text-2xl font-bold">Shipping Address</h2>
             </div>
             <div className="text-gray-700 space-y-1">
               <p className="font-semibold">{order.shippingInfo.fullName}</p>
               <p>{order.shippingInfo.address}</p>
               <p>
-                {order.shippingInfo.city}, {order.shippingInfo.state}{" "}
-                {order.shippingInfo.zipCode}
+                {order.shippingInfo.city}, {order.shippingInfo.county}{" "}
+                {order.shippingInfo.postcode}
               </p>
               <p>{order.shippingInfo.country}</p>
               <p className="pt-2">{order.shippingInfo.email}</p>
@@ -154,7 +154,7 @@ export default function ConfirmationPage() {
             <h2 className="text-2xl font-bold mb-6">What's Next?</h2>
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                <div className="w-10 h-10 bg-amber-800 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
                   1
                 </div>
                 <div>

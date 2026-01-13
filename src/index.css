@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #fef6ee;
-  --color-primary-100: #fdead6;
-  --color-primary-200: #fad2ad;
-  --color-primary-300: #f7b279;
-  --color-primary-400: #f38843;
-  --color-primary-500: #f0681e;
-  --color-primary-600: #e14d14;
-  --color-primary-700: #ba3812;
-  --color-primary-800: #942e16;
-  --color-primary-900: #782815;
+  /* Primary color palette */
+  --color-primary: oklch(67.12% 0.157 35.52);
 
+  /* Custom fonts */
   --font-family-sans: "Inter", system-ui, sans-serif;
   --font-family-display: "Poppins", sans-serif;
+}
+
+@utility bg-radial-gradient {
+  background: radial-gradient(
+    circle at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 
 @layer base {
@@ -24,7 +25,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200;
+    @apply bg-amber-800 hover:bg-amber-900 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200;
   }
 
   .btn-secondary {

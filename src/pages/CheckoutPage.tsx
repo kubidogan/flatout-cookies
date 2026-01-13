@@ -43,7 +43,7 @@ export default function CheckoutPage() {
         <div className="container mx-auto px-4 py-4">
           <button
             onClick={() => navigate("/cart")}
-            className="flex items-center gap-2 text-primary-600 hover:text-primary-700"
+            className="flex items-center gap-2 text-amber-800 hover:text-amber-900"
           >
             <ArrowLeft size={20} />
             Back to Cart
@@ -73,7 +73,7 @@ export default function CheckoutPage() {
                       value={formData.fullName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                       placeholder="John Doe"
                     />
                   </div>
@@ -88,7 +88,7 @@ export default function CheckoutPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -103,7 +103,7 @@ export default function CheckoutPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                       placeholder="07700 900000"
                     />
                   </div>
@@ -118,7 +118,7 @@ export default function CheckoutPage() {
                       value={formData.country}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                       placeholder="United Kingdom"
                     />
                   </div>
@@ -134,7 +134,7 @@ export default function CheckoutPage() {
                     value={formData.address}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                     placeholder="123 Main Street"
                   />
                 </div>
@@ -150,7 +150,7 @@ export default function CheckoutPage() {
                       value={formData.city}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                       placeholder="London"
                     />
                   </div>
@@ -165,7 +165,7 @@ export default function CheckoutPage() {
                       value={formData.county}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                       placeholder="Greater London"
                     />
                   </div>
@@ -180,7 +180,7 @@ export default function CheckoutPage() {
                       value={formData.postcode}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
+                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none"
                       placeholder="SW1A 1AA"
                     />
                   </div>
@@ -227,16 +227,16 @@ export default function CheckoutPage() {
               <div className="border-t pt-4 space-y-2">
                 <div className="flex justify-between text-gray-600">
                   <span>Subtotal</span>
-                  <span>${getCartTotal().toFixed(2)}</span>
+                  <span>£{getCartTotal().toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                   <span>Shipping</span>
                   <span className="text-green-600">FREE</span>
                 </div>
-                <div className="flex justify-between text-xl font-bold pt-2">
-                  <span>Total</span>
-                  <span className="text-primary-600">
-                    ${getCartTotal().toFixed(2)}
+                <div className="flex justify-between items-center text-2xl font-bold">
+                  <span>Total:</span>
+                  <span className="text-amber-800">
+                    £{getCartTotal().toFixed(2)}
                   </span>
                 </div>
               </div>

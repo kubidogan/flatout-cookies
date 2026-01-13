@@ -24,7 +24,7 @@ function CookieCard({ cookie }: { cookie: Cookie }) {
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         {cookie.featured && (
-          <span className="absolute top-2 right-2 bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+          <span className="absolute top-2 right-2 bg-amber-800 text-white px-3 py-1 rounded-full text-sm font-semibold">
             Featured
           </span>
         )}
@@ -37,11 +37,11 @@ function CookieCard({ cookie }: { cookie: Cookie }) {
       <div className="p-6">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-bold text-gray-900">{cookie.name}</h3>
-          <span className="text-primary-600 font-bold text-lg">
+          <span className="text-amber-800 font-bold text-lg">
             £{cookie.price.toFixed(2)}
           </span>
         </div>
-        <p className="text-sm text-primary-600 mb-2">{cookie.category}</p>
+        <p className="text-sm text-amber-700 mb-2">{cookie.category}</p>
         <p className="text-gray-600 mb-4 line-clamp-2">{cookie.description}</p>
         <div className="mb-4">
           <p className="text-xs text-gray-500 mb-1">Ingredients:</p>
@@ -56,7 +56,7 @@ function CookieCard({ cookie }: { cookie: Cookie }) {
             added
               ? "bg-green-500 text-white"
               : cookie.inStock
-              ? "bg-primary-600 hover:bg-primary-700 text-white"
+              ? "bg-amber-800 hover:bg-amber-900 text-white"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
           }`}
         >
@@ -95,12 +95,12 @@ export default function ShopPage() {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-primary-600 font-display">
+            <h1 className="text-3xl font-bold text-amber-800 font-display">
               FlatOut Cookies
             </h1>
             <button
               onClick={() => navigate("/cart")}
-              className="relative flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors"
+              className="relative flex items-center gap-2 bg-amber-800 text-white px-6 py-3 rounded-lg hover:bg-amber-900 transition-colors"
             >
               <ShoppingCart size={24} />
               <span className="font-semibold">Cart</span>
@@ -115,7 +115,7 @@ export default function ShopPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-500 to-primary-700 text-white py-16">
+      <section className="bg-linear-to-r from-amber-600 to-amber-800 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Freshly Baked Cookies
@@ -134,7 +134,7 @@ export default function ShopPage() {
             placeholder="Search cookies..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full px-6 py-4 rounded-lg border-2 border-gray-300 focus:border-primary-500 focus:outline-none text-lg"
+            className="w-full px-6 py-4 rounded-lg border-2 border-gray-300 focus:border-amber-600 focus:outline-none text-lg"
           />
 
           <div className="flex flex-wrap gap-3">
@@ -144,7 +144,7 @@ export default function ShopPage() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-2 rounded-full font-semibold transition-all ${
                   selectedCategory === category
-                    ? "bg-primary-600 text-white shadow-lg"
+                    ? "bg-amber-800 text-white shadow-lg"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
